@@ -1,0 +1,178 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #434140;
+}
+
+.container {
+    width: 100%;
+    max-width: 1275px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+/* Slider */
+
+.slider__container {
+    width: 100%;
+    max-width: 1275px;
+    height: 575px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slider_Pic {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider__autoshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0;
+    transition: opacity .1s linear;
+}
+
+.slider__autoshow:hover {
+    opacity: .8;
+}
+
+.slider__autoshow_button {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: auto;
+
+    border-radius: 10%;
+
+    cursor: pointer;
+}
+
+.autoshowButton {
+    position: absolute;
+    left: 100px;
+    width: 85%;
+    height: 100%;
+}
+
+.fa-pause, .fa-play {
+    font-size: 100px;
+    color: #fff;
+
+    margin: auto;
+}
+
+.sliderDots {
+    display: flex;
+
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hide {
+    display: none;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 10px;
+
+    border: 1px solid #fff;
+    border-radius: 50%;
+
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #fff;
+}
+
+.arrow-container {
+    position: absolute;
+    top: calc(50% - 45px);
+    right: 30px;
+    z-index: 1;
+
+    transform: translateY(-50%);
+
+    width: 90px;
+    height: 90px;
+
+    padding: 20px;
+
+    transform: rotate(45deg);
+
+    cursor: pointer;
+}
+
+.arrow-container--right {
+    right: 0;
+    left: 30px;
+    transform: rotate(-135deg);
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
+
+    cursor: pointer;
+}
+
+.slider-Line {
+    width: 100%;
+    height: 8px;
+
+    background-color: transparent;
+}
+
+.sliderlinefilled {
+    width: 0%;
+    height: 100%;
+    background-color: #6caf01;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

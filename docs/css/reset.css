@@ -1,0 +1,23 @@
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    
+}
+
+
+
+img {
+    width: 100%;
+    display: block;
+}
